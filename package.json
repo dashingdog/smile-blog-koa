@@ -1,11 +1,11 @@
 {
-  "name": "smile-blog-koa",
-  "version": "1.0.0",
+  "name": "dashingdog-blog-koa",
+  "version": "1.0.1",
   "description": "",
   "main": "app.js",
   "scripts": {
     "start:dev": "nodemon --inspect-brk",
-    "start:prod": "node app.js"
+    "start:prod": "pm2 start app.js"
   },
   "repository": {
     "type": "git",

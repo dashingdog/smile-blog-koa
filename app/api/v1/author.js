@@ -68,7 +68,7 @@ authorApi.put('/password/self', new Auth().m, new Auth().m, async (ctx) => {
 authorApi.delete('/', new Auth(32).m, async (ctx) => {
   const v = await new PositiveIntegerValidator().validate(ctx)
   const id = getSafeParamId(v)
-  
+
   const authorId = ctx.currentAuthor.id
   if (id === authorId) {
     throw new Forbidden({
@@ -100,7 +100,7 @@ authorApi.post('/login', async (ctx) => {
  */
 authorApi.get('/refresh', new RefreshAuth().m, async (ctx) => {
   const author = ctx.currentAuthor
-  
+
   const accessToken = generateToken(author.id, author.auth, TokenType.ACCESS, { expiresIn: global.config.security.accessExp })
   const refreshToken = generateToken(author.id, author.auth, TokenType.REFRESH, { expiresIn: global.config.security.refreshExp })
 
