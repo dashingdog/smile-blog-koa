@@ -6,7 +6,8 @@ const InitManager = require('./core/init')
 const catchError = require('./middleware/exception')
 const cors = require('koa2-cors');
 const multipart = require('./core/multipart')
-
+// const mount = require('koa-mount')
+// const serve = require('koa-static')
 const app = new Koa()
 
 app.use(cors())

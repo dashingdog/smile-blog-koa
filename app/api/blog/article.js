@@ -52,7 +52,7 @@ articleApi.get('/blog/articles', async (ctx) => {
 // 搜索文章
 articleApi.get('/search/articles', async (ctx) => {
   const v = await new SearchArticlesValidator().validate(ctx)
-  
+
   const result = await ArticleDto.searchArticles(v)
   ctx.body = result
 })

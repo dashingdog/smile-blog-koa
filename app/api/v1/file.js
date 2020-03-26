@@ -7,12 +7,14 @@ const fileApi = new Router({
   prefix: '/v1/file'
 })
 
-fileApi.post('/', new Auth().m, async (ctx) => {
-  const files = await ctx.multipart()
+fileApi.post('/',
+  // new Auth().m, 
+  async (ctx) => {
+    const files = await ctx.multipart()
 
-  const upLoader = new UpLoader(`blog/`)
-  const arr = await upLoader.upload(files)
-  ctx.body = arr
-})
+    const upLoader = new UpLoader(`blog/`)
+    const arr = await upLoader.upload(files)
+    ctx.body = arr
+  })
 
 module.exports = fileApi

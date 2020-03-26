@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start:dev": "nodemon --inspect-brk",
+    "start:dev": "nodemon",
+    "start:brk": "nodemon --inspect-brk",
     "start:prod": "pm2 start app.js --name blog-server"
   },
   "repository": {

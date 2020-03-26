@@ -2,7 +2,7 @@ module.exports = {
   environment: 'dev',
   database: {
     dbName: 'dashingdog_blog',
-    host: 'localhost',
+    host: '111.230.94.16',
     port: 3306,
     user: 'root',
     password: 'fa123321',
@@ -32,10 +32,10 @@ module.exports = {
   },
   // 七牛相关配置
   qiniu: {
-    accessKey: '',
-    secretKey: '',
-    bucket: '',
-    siteDomain: ''
+    accessKey: 'sbrUpYP80MVTQewC2iqyFffMFcunvDVV9uvjmxk4',
+    secretKey: '9hKbO0UwG4jg2x8BSKXixvq-sOVz22QCMbUcZQRi',
+    bucket: 'dashingdog-blog',
+    siteDomain: 'q7mw4ag8c.bkt.clouddn.com/'
   },
   host: 'http://localhost:3000'
 }

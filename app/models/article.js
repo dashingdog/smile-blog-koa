@@ -15,7 +15,7 @@ Article.init({
     allowNull: false
   },
   cover: {
-    type: Sequelize.STRING(255),
+    type: Sequelize.STRING(400),
     defaultValue: ''
   },
   description: {
