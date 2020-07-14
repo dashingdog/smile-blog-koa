@@ -18,7 +18,7 @@
 
 ## Setup
 
-- 需要把`config`目录下的`config.js.sample`重命名为`config.js`，然后进行相关参数的配置
+- 需要把`config`目录下的`config.js.template`重命名为`config.js`，然后进行相关参数的配置
 - 开始需要关闭权限校验中间件，通过`Postman`创建一个超级管理员（看最下面）
 - 启动该项目前需要全局安装`nodemon`和`pm2`
 
