@@ -8,10 +8,10 @@ const fileApi = new Router({
 })
 
 fileApi.post('/',
-  // new Auth().m, 
+  new Auth().m,
   async (ctx) => {
+    console.log('进入上传图片接口')
     const files = await ctx.multipart()
-
     const upLoader = new UpLoader(`blog/`)
     const arr = await upLoader.upload(files)
     ctx.body = arr

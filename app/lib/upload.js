@@ -37,7 +37,7 @@ class UpLoader {
           if (respErr) {
             reject(respErr)
           }
-  
+
           if (respInfo.statusCode === 200) {
             const url = siteDomain + respBody.key
             resolve(url)
@@ -49,8 +49,8 @@ class UpLoader {
       })
       promises.push(promise)
     }
-
     try {
+      console.log(promises)
       return Promise.all(promises)
     } catch (error) {
       throw new Error('文件上传失败')

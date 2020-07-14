@@ -4,9 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start:dev": "nodemon",
+    "start:dev": "cross-env NODE_ENV=development nodemon",
     "start:brk": "nodemon --inspect-brk",
-    "start:prod": "pm2 start app.js --name blog-server"
+    "start:prod": "cross-env NODE_ENV=production pm2 start app.js --name blog-server"
   },
   "repository": {
     "type": "git",
@@ -44,5 +44,8 @@
     "@dao": "app/dao",
     "@validator": "app/validators",
     "@exception": "core/http-exception"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2"
   }
 }

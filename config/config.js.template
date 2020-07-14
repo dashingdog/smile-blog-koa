@@ -2,11 +2,11 @@
 module.exports = {
   environment: process.env.NODE_ENV,
   database: {
-    dbName: 'dashingdog_blog',
-    host: '111.230.94.16',
+    dbName: '',
+    host: '',
     port: 3306,
     user: 'root',
-    password: 'fa123321',
+    password: '',
     logging: false,
     timezone: '+08:00'
   },
@@ -33,10 +33,10 @@ module.exports = {
   },
   // 七牛相关配置
   qiniu: {
-    accessKey: 'sbrUpYP80MVTQewC2iqyFffMFcunvDVV9uvjmxk4',
-    secretKey: '9hKbO0UwG4jg2x8BSKXixvq-sOVz22QCMbUcZQRi',
-    bucket: 'dashingdog-blog',
-    siteDomain: 'q7mw4ag8c.bkt.clouddn.com/'
+    accessKey: '',
+    secretKey: '',
+    bucket: '',
+    siteDomain: ''
   },
   host: 'http://localhost:3000'
 }

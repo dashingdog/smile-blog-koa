@@ -5,7 +5,7 @@ const catchError = async (ctx, next) => {
     await next()
   } catch (error) {
     const isHttpException = error instanceof HttpException
-    const isDev = global.config.environment = 'dev'
+    const isDev = global.config.environment == 'development'
     if (isDev && !isHttpException) {
       throw error
     }
