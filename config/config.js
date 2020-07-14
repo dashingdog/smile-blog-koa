@@ -3,7 +3,7 @@ module.exports = {
   environment: process.env.NODE_ENV,
   database: {
     dbName: 'dashingdog_blog',
-    host: '111.230.94.16',
+    host: '120.77.208.241',
     port: 3306,
     user: 'root',
     password: 'fa123321',
@@ -36,7 +36,7 @@ module.exports = {
     accessKey: 'sbrUpYP80MVTQewC2iqyFffMFcunvDVV9uvjmxk4',
     secretKey: '9hKbO0UwG4jg2x8BSKXixvq-sOVz22QCMbUcZQRi',
     bucket: 'dashingdog-blog',
-    siteDomain: 'q7mw4ag8c.bkt.clouddn.com/'
+    siteDomain: 'http://cdn.dashingdog.cn/'
   },
   host: 'http://localhost:3000'
 }
