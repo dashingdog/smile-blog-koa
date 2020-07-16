@@ -10,7 +10,11 @@ const multipart = require('./core/multipart')
 // const serve = require('koa-static')
 const app = new Koa()
 
-app.use(cors())
+app.use(cors({
+  origin: function(ctx) {
+    return '*';
+  },
+}))
 app.use(catchError)
 app.use(parser())
 multipart(app)
