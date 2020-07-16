@@ -20,7 +20,7 @@ yarn-error.log*
 *.sw?
 
 # others
-config/config.js
+/config/config.js
 package-lock.json
 yarn.lock
 # config.js
