@@ -8,7 +8,7 @@ const fileApi = new Router({
 })
 
 fileApi.post('/',
-  new Auth().m,
+  // new Auth().m,
   async (ctx) => {
     const files = await ctx.multipart()
     const upLoader = new UpLoader(`blog/`)
